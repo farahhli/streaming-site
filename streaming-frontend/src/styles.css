@@ -1,0 +1,117 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-item {
+  width: 48%;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-item h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.video-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.custom-controls label {
+  margin-right: 10px;
+}
+
+.custom-controls input[type="range"] {
+  margin: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
