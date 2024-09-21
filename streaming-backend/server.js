@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'public')));
+const port = process.env.PORT || 3000;  // Use the port provided by Heroku or default to 3000 locally
 
-app.get('/api/stream', (req, res) => {
-  res.send('Streaming API endpoint');
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
