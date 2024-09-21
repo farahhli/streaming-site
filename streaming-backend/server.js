@@ -1,17 +1,16 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 3000;  // Heroku sets process.env.PORT dynamically
 
-// Middleware (optional) - Serves static files if needed
-app.use(express.static('public'));
+// Serve static files (if applicable)
+app.use(express.static('public')); // If you have static files to serve
 
-// Root route (you can add more routes as needed)
+// Define routes (Example route)
 app.get('/', (req, res) => {
-  res.send('Hello, welcome to the streaming site!');
+    res.send('Hello World');
 });
 
-// Listen on the dynamic port Heroku provides (or default to 3000 for local development)
-const PORT = process.env.PORT || 3000;
-
+// Bind to dynamic PORT
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
