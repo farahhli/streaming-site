@@ -1,15 +1,12 @@
 {
   "name": "streaming-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "streaming-backend/server.js",
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.0"
   },
   "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": "20.x"
+    "start": "node streaming-backend/server.js"
   }
 }
